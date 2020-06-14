@@ -31,7 +31,3 @@ func TestHealthRoute(t *testing.T) {
 	tripSvc.RunAPITests(t, router, healthRouteTests[0:1])
 
 }
-
-func TestThatFails(t *testing.T) {
-	t.Fail()
-}
