@@ -30,4 +30,4 @@ go test
 
 > Note: this requires an actual database connection, so the required ENV variables need to be present.
 
-> Note: added this to test workflow
+> Note: added this to test workflow 2
