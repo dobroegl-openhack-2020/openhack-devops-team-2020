@@ -52,7 +52,7 @@ jobs:
     - name: Test
       run: |
         cd apis/trips
-        go test -v .
+        go test -v ./tests
 
     - name: On failure do something...
       if: ${{ failure() }}
