@@ -1,4 +1,4 @@
-name: Go
+name: apis/trips CI 
 
 on:
   push:
@@ -52,4 +52,16 @@ jobs:
     - name: Test
       run: |
         cd apis/trips
-        go test -v .
+        go test -v ./tests
+
+    - name: On failure do something...
+      if: ${{ failure() }}
+      uses: imjohnbo/issue-bot@v2.2
+      with:
+        # Comma delimited list of issue labels. Required value either as input or in YAML header of issue template.
+        labels: build-failure 
+        # Issue title. Required value either as input or in YAML header of issue template.
+        title: CI apis/trips failed 
+        body: CI failure
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
