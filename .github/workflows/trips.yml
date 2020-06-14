@@ -63,3 +63,5 @@ jobs:
         # Issue title. Required value either as input or in YAML header of issue template.
         title: CI apis/trips failed 
         body: CI failure
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
