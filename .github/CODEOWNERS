@@ -1,3 +1,4 @@
-*            @dbroeglin
-apis/poi/*   @fodano79
-apis/trips/* @dbroeglin
+*             @dbroeglin
+/apis/poi/*   @fodano79
+/apis/trips/* @dbroeglin
+
